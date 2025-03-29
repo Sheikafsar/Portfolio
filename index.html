@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        
+        <nav class="navbar">
+            <a href="#home" style="--i:1; "id="nav-home" class="active">Home</a>
+            <a href="#skills" style="--i:2;" id="nav-skills">Skills</a>
+            <a href="#internships"style="--i:3;" id="nav-internships">Internship</a>
+            <a href="#projects"style="--i:4;" id="nav-projects">Projects</a>
+            <a href="#education"style="--i:5;" id="nav-education">Education</a>
+            <a href="#certification"style="--i:6;" id="nav-certification">Certifications</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/sheik-afsar-1107b3270/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://github.com/Sheikafsar" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="mailto:sheikafsar6@gmail.com" target="_blank"><i class='bx bx-envelope'></i></i></a>
+            <a href="https://wa.me/8015890420" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <div class="home-content">
+            <h1>Hello, This is</h1>
+            <h2>SHEIK AFSAR S F </h2>
+            <h1>And I'm a <span class="text"></span></h1>
+            <p>I am an Computer Science & Engineering student. I am passionate about leveraging technology to solve real-world problems and am committed to continuous learning and innovation.</p>
+            <a href="https://drive.google.com/file/d/1TQf2AQsLgPkv43NYJiCwk-IxefUOqxmx/view?usp=drivesdk" download="Kunguma_Varshini_Resume.pdf" class="btn">Resume</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="<a href="https://ibb.co/mrxdVmCY"><img src="https://i.ibb.co/BWStjJX/19.jpg" alt="19" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>pic share</a><br />" alt="croped" >
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["PSNA Student","Build-club Member","Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<section id="skills">
+    <h2 class="sub-title">Technical Skills</h2>
+    <div class="skills-list">
+        <div class="skill-item">
+            <span class="skill-name">C Programming</span>
+            <div class="skill-level">
+                <div class="skill-percentage" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <span class="skill-name">Web Development</span>
+            <div class="skill-level">
+                <div class="skill-percentage" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <span class="skill-name">PowerBi</span>
+            <div class="skill-level">
+                <div class="skill-percentage" style="width: 65%;"></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <span class="skill-name">HTML,CSS & JavaScript</span>
+            <div class="skill-level">
+                <div class="skill-percentage" style="width: 80%;"></div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <section id="internships">
+        <div class="container">
+            <h2 class="sub-title">Internship</h2>
+            <div class="internships-box">
+                <div class="internship-item">
+                    
+                    <h3>At Edify Techno Solutions</h3>
+                    <img src="https://i.ibb.co/XZShXdcb/edify.jpg" alt="edify" border="0">
+                    <p>During my internship at Edify Techno Solutions, Chennai (July 2024), I worked on a web development project utilizing HTML, CSS, and JavaScript. This experience allowed me to gain hands-on exposure to building interactive and responsive web interfaces. I enhanced my front-end development skills, focusing on UI/UX design principles and optimizing website responsiveness. Through this internship, I also improved my ability to work in a real-world development environment, applying best practices in coding and design. Additionally, I collaborated with my team to troubleshoot issues and implement innovative solutions. This opportunity helped me develop a strong foundation in modern web development technologies and best practices.
+                    </p>
+                </div>
+                <div class="internship-item">
+                    <h3>At NSIC</h3>
+                    <img src="https://i.imgur.com/XTRBcBV.png" alt="NSIC">
+                    <p>During my 15-day internship at NSIC, I underwent intensive training in industrial-based embedded systems with AI and IoT, gaining hands-on experience and deepening my understanding. Engaging in practical exercises, I acquired valuable insights and enhanced my skill set significantly. This opportunity allowed me to explore the intersection of AI and IoT within industrial settings, preparing me to tackle real-world challenges with confidence and expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
+            <div class="projects-box">
+                <!-- First Project with PDF Link -->
+                <div class="project-item">
+                    <h3>AI powered Career Guide Assistent</h3>
+                    <img src="https://i.ibb.co/LXnbwqLV/ai.png" alt="ai" border="0">
+                    <p>Manufactured lithium-ion cells for electric vehicles, ensuring precision and quality to meet the evolving EV market demands.The AI-Powered Career Guide Assistant is an intelligent system that helps users explore career paths based on their skills, interests, and market trends. It provides personalized job recommendations, skill gap analysis, and career growth insights using AI-driven data analysis. The assistant enhances career decision-making by offering real-time guidance, resume feedback, and industry trends tailored to individual aspirations.</p>
+                    
+                </div>
+    
+                <!-- Second Project with PDF Link -->
+                <div class="project-item">
+                    <h3>TO-DO App</h3>
+                    <img src="https://i.ibb.co/h1w1Gyr1/todo.png" alt="todo" border="0">
+                    <p>A To-Do Application built using Apache Cordova is a cross-platform task management app that runs on both Android and iOS using web technologies (HTML, CSS, and JavaScript). Cordova allows developers to use a single codebase while accessing native device features through plugins. The app enables users to add, edit, delete, and organize tasks efficiently. </p>
+                    
+                </div>
+    
+                <!-- Third Project with PDF Link -->
+                <div class="project-item">
+                    <h3>Web Application</h3>
+                    <img src="https://i.ibb.co/HTGyt7fN/web.jpg" alt="web" border="0">
+                    <p>During my internship at Edify Techno Solutions, Chennai (July 2024), I worked on web development projects using HTML, CSS, and JavaScript. One of the key projects I developed was a personal portfolio website, showcasing skills, projects, and contact details with a responsive design. I also gained experience in creating interactive web pages and improving website layout and styling. This internship helped me enhance my frontend development skills and understand the fundamentals of UI/UX design in real-world applications.</p>
+                   
+                </div>
+    
+                <!-- Fourth Project with PDF Link -->
+                <div class="project-item">
+                    <h3>App Development</h3>
+                    <img src="https://i.imgur.com/58z8ikW.png" alt="App Development">
+                    <p>This Inventory Management Application, developed using Flutter, optimizes inventory control and invoice management for Android devices. It allows users to add, update, and track stock in real-time, ensuring efficient inventory handling. The app also includes invoice generation, sales tracking, and basic analytics, helping businesses make informed decisions. With a simple and user-friendly interface, it streamlines daily operations and enhances productivity. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="education" id="education">
+        <h1 class="heading">Education</h1>
+        <div class="education-container">
+            <div class="education-box">
+                <h3>UG</h3>
+                <p>College  Name: <a href="https://www.psnacet.edu.in/" target="_blank">PSNACET</a></p>
+                <p>Degree: B.E</p>
+                <p>Branch: cOMPUTER SCIENCE & ENGINEERING</p>
+                <p>Year of Passing: 2025</p>
+                <p>CGPA: 6.5</p>
+            </div>
+            <div class="education-box">
+                <h3>Diplomo</h3>
+                <p>School Name: <a href="https://www.klnpoly.com/" target="_blank">K.L.NAGASWAMY MEMORIAL POLYTECHNIC COLLEGE</a></p> <!-- Add school URL here -->
+                <p>Year of Passing: 2021</p>
+                <p>Percentage: 71.2</p>
+            </div>
+            <div class="education-box">
+                <h3>10th Standard</h3>
+                <p>School Name: YMCA Mat Hr Sec School</a></p> <!-- Add school URL here -->
+                <p>Year of Passing: 2019</p>
+                <p>Percentage: 51.22</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section id="certifications">
+    <div class="container">
+        <h2 class="sub-title">Certifications</h2>
+        <div class="certificates-list">
+            <!-- Add the certificate items with links to view certificates -->
+            <a href="https://drive.google.com/file/d/15xdmWu9CfXVDWg-3lhIS2miWruQXhxIS/view?usp=sharing" target="_blank" class="certificate-item" download="NPTEL_Certificate.pdf">NPTEL Certificate</a>
+            <a href="https://drive.google.com/file/d/1mENIm757iIKv5wtClO2Er5tje30N1P0K/view?usp=sharing" target="_blank" class="certificate-item" download="Intern_Certificate.pdf">Intern At Edify</a>
+            <a href="https://drive.google.com/file/d/1FH_-qSHRXsD0cAe5LkVgrv9kjAskeWq-/view?usp=sharing" target="_blank" class="certificate-item" download="NSIC_Certificate.pdf">NSIC intern Certificate</a>
+            <a href="https://drive.google.com/file/d/1tkitv0xBLPAkJkcPVVzpqvvjMTGe0_Lb/view?usp=sharing" target="_blank" class="certificate-item" download="C_Certificate.pdf">C Certificate</a>
+            <a href="https://drive.google.com/file/d/1ILcOors86kLg1TscvZuop0CRBUL54bMf/view?usp=sharing" target="_blank" class="certificate-item" download="ML_Certificate.pdf">PowerBI Certificate</a>
+            <a href="https://drive.google.com/file/d/1TKlytIeutM_4OMtqfs2ocBT66bV1FNvG/view?usp=sharing" target="_blank" class="certificate-item" download="Data_Analysis_Certificate.pdf">Web Development</a>
+            
+        </div>
+    </div>
+</section>
+
+
+    
+<script>
+    // Highlight the corresponding navbar item when scrolling
+document.addEventListener('scroll', function() {
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('.navbar a');
+
+    let scrollPos = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach((section, i) => {
+        if (scrollPos > section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+            navLinks.forEach((link) => {
+                link.classList.remove('active');
+            });
+            navLinks[i].classList.add('active');
+        }
+    });
+});
+
+// Smooth scroll when clicking a navbar link
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Remove active class from all links
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Add active class to the clicked link
+        this.classList.add('active');
+
+        // Scroll to the section
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+</script>
+
+
+    
+</body>
+</html>
